@@ -135,3 +135,18 @@ export const abilities_tech = [
         style: null
     },
 ];
+
+export const education_names = [
+    {
+        duration: '2017 - 2019',
+        place: 'Guatemala',
+        career: 'Perito en Informática y Bachillerato en Ciencias y Letras',
+        where: 'Centro Educativo Técnico Laboral KINAL'
+    },
+    {
+        duration: '2020 - Actual',
+        place: 'Guatemala',
+        career: 'Ingeniería en Ciencias de Computación y TI',
+        where: 'Universidad del Valle de Guatemala'
+    }
+]

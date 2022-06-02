@@ -3,6 +3,7 @@ import "./Container.scss";
 import Sidebar from "../sidebar/sidebar";
 import About from "../about/about";
 import Abilities from "../abilities/abilities";
+import Education from "../education/education";
 
 const Container = () => {
   return (
@@ -14,6 +15,7 @@ const Container = () => {
         <div className="col-10">
           <About />
           <Abilities />
+          <Education />
         </div>
       </div>
     </React.Fragment>
