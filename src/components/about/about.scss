@@ -1,0 +1,25 @@
+.left--side {
+    display: flex;
+    flex-direction: row;
+}
+
+.left--side-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.ml--1 {
+    margin-left: 3%;
+}
+
+.right--side { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
