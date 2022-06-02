@@ -71,7 +71,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar Abilities = function Abilities() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"row\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"col-12\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h1\", null, \"Habilidades\"))));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Abilities);\n\n//# sourceURL=webpack://proyecto3/./src/components/abilities/abilities.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _utilities_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utilities/constants */ \"./src/components/utilities/constants.js\");\n/* harmony import */ var _abilities_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./abilities.scss */ \"./src/components/abilities/abilities.scss\");\nfunction _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }\n\nfunction _nonIterableSpread() { throw new TypeError(\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _iterableToArray(iter) { if (typeof Symbol !== \"undefined\" && iter[Symbol.iterator] != null || iter[\"@@iterator\"] != null) return Array.from(iter); }\n\nfunction _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }\n\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== \"undefined\" && arr[Symbol.iterator] || arr[\"@@iterator\"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\n\nvar Abilities = function Abilities() {\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(_utilities_constants__WEBPACK_IMPORTED_MODULE_1__.abilities_tech),\n      _useState2 = _slicedToArray(_useState, 2),\n      grid = _useState2[0],\n      setGrid = _useState2[1];\n\n  var flipCard = function flipCard(i) {\n    var gridCopy = _toConsumableArray(grid);\n\n    gridCopy[i].style = {\n      transform: \"rotateY(180deg)\"\n    };\n    setGrid(gridCopy);\n  };\n\n  var flipCard1 = function flipCard1(i) {\n    var gridCopy = _toConsumableArray(grid);\n\n    gridCopy[i].style = null;\n    setGrid(gridCopy);\n  };\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"row\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"col-12 abilities--place\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h1\", null, \"Habilidades\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"row\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"grid--container\"\n  }, grid.map(function (e, i) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n      className: \"grid--item\",\n      key: i\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n      className: \"main--container\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n      className: \"card--container\",\n      style: e.style\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n      className: \"front\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n      onMouseLeave: function onMouseLeave() {\n        return flipCard1(i);\n      },\n      onMouseEnter: function onMouseEnter() {\n        return flipCard(i);\n      },\n      className: \"star--img\",\n      src: e.img\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n      className: \"back\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"a\", {\n      href: e.url,\n      target: \"_blank\",\n      style: {\n        textDecoration: 'none',\n        color: 'black'\n      }\n    }, e.name))))));\n  }))))));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Abilities);\n\n//# sourceURL=webpack://proyecto3/./src/components/abilities/abilities.js?");
 
 /***/ }),
 
@@ -119,6 +119,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/utilities/constants.js":
+/*!***********************************************!*\
+  !*** ./src/components/utilities/constants.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"abilities_tech\": () => (/* binding */ abilities_tech)\n/* harmony export */ });\n/* harmony import */ var _assets_img_logos_angular_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/img/logos/angular.png */ \"./src/assets/img/logos/angular.png\");\n/* harmony import */ var _assets_img_logos_aws_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/img/logos/aws.png */ \"./src/assets/img/logos/aws.png\");\n/* harmony import */ var _assets_img_logos_css_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/img/logos/css.png */ \"./src/assets/img/logos/css.png\");\n/* harmony import */ var _assets_img_logos_django_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/img/logos/django.png */ \"./src/assets/img/logos/django.png\");\n/* harmony import */ var _assets_img_logos_firebase_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/img/logos/firebase.png */ \"./src/assets/img/logos/firebase.png\");\n/* harmony import */ var _assets_img_logos_html_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/img/logos/html.png */ \"./src/assets/img/logos/html.png\");\n/* harmony import */ var _assets_img_logos_ionic_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/img/logos/ionic.svg */ \"./src/assets/img/logos/ionic.svg\");\n/* harmony import */ var _assets_img_logos_js_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/img/logos/js.png */ \"./src/assets/img/logos/js.png\");\n/* harmony import */ var _assets_img_logos_laravel_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/img/logos/laravel.png */ \"./src/assets/img/logos/laravel.png\");\n/* harmony import */ var _assets_img_logos_mysql_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../assets/img/logos/mysql.png */ \"./src/assets/img/logos/mysql.png\");\n/* harmony import */ var _assets_img_logos_oracle_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../assets/img/logos/oracle.png */ \"./src/assets/img/logos/oracle.png\");\n/* harmony import */ var _assets_img_logos_php_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../assets/img/logos/php.png */ \"./src/assets/img/logos/php.png\");\n/* harmony import */ var _assets_img_logos_postgres_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../assets/img/logos/postgres.png */ \"./src/assets/img/logos/postgres.png\");\n/* harmony import */ var _assets_img_logos_python_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../assets/img/logos/python.png */ \"./src/assets/img/logos/python.png\");\n/* harmony import */ var _assets_img_logos_react_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../assets/img/logos/react.png */ \"./src/assets/img/logos/react.png\");\n/* harmony import */ var _assets_img_logos_scss_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../assets/img/logos/scss.png */ \"./src/assets/img/logos/scss.png\");\n/* harmony import */ var _assets_img_logos_sql_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../assets/img/logos/sql.png */ \"./src/assets/img/logos/sql.png\");\n/* harmony import */ var _assets_img_logos_ts_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../assets/img/logos/ts.png */ \"./src/assets/img/logos/ts.png\");\n/* harmony import */ var _assets_img_logos_vue_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../assets/img/logos/vue.png */ \"./src/assets/img/logos/vue.png\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar abilities_tech = [{\n  name: 'Javascript',\n  img: _assets_img_logos_js_png__WEBPACK_IMPORTED_MODULE_7__[\"default\"],\n  url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',\n  style: null\n}, {\n  name: 'PHP',\n  img: _assets_img_logos_php_png__WEBPACK_IMPORTED_MODULE_11__[\"default\"],\n  url: 'https://www.php.net/',\n  style: null\n}, {\n  name: 'Python',\n  img: _assets_img_logos_python_png__WEBPACK_IMPORTED_MODULE_13__[\"default\"],\n  url: 'https://www.python.org/',\n  style: null\n}, {\n  name: 'HTML 5',\n  img: _assets_img_logos_html_png__WEBPACK_IMPORTED_MODULE_5__[\"default\"],\n  url: 'https://developer.mozilla.org/en-US/docs/Glossary/HTML5',\n  style: null\n}, {\n  name: 'CSS 3',\n  img: _assets_img_logos_css_png__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n  url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',\n  style: null\n}, {\n  name: 'Angular',\n  img: _assets_img_logos_angular_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n  url: 'https://angular.io/',\n  style: null\n}, {\n  name: 'AWS',\n  img: _assets_img_logos_aws_png__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  url: 'https://aws.amazon.com/',\n  style: null\n}, {\n  name: 'Django',\n  img: _assets_img_logos_django_png__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n  url: 'https://www.djangoproject.com/',\n  style: null\n}, {\n  name: 'Firebase',\n  img: _assets_img_logos_firebase_png__WEBPACK_IMPORTED_MODULE_4__[\"default\"],\n  url: 'https://firebase.google.com/?gclid=CjwKCAjwv-GUBhAzEiwASUMm4r6AQ99YwVUc2h8MTWXpqeWIIL3fcE1z-SgXjXNPIUVRdlZcIPegyhoCsg8QAvD_BwE&gclsrc=aw.ds',\n  style: null\n}, {\n  name: 'Ionic',\n  img: _assets_img_logos_ionic_svg__WEBPACK_IMPORTED_MODULE_6__[\"default\"],\n  url: 'https://ionicframework.com/',\n  style: null\n}, {\n  name: 'Laravel',\n  img: _assets_img_logos_laravel_png__WEBPACK_IMPORTED_MODULE_8__[\"default\"],\n  url: 'https://laravel.com/',\n  style: null\n}, {\n  name: 'MySQL',\n  img: _assets_img_logos_mysql_png__WEBPACK_IMPORTED_MODULE_9__[\"default\"],\n  url: 'https://www.mysql.com/',\n  style: null\n}, {\n  name: 'Oracle',\n  img: _assets_img_logos_oracle_png__WEBPACK_IMPORTED_MODULE_10__[\"default\"],\n  url: 'https://www.oracle.com/id/index.html',\n  style: null\n}, {\n  name: 'Postgres',\n  img: _assets_img_logos_postgres_png__WEBPACK_IMPORTED_MODULE_12__[\"default\"],\n  url: 'https://www.postgresql.org/',\n  style: null\n}, {\n  name: 'React JS',\n  img: _assets_img_logos_react_png__WEBPACK_IMPORTED_MODULE_14__[\"default\"],\n  url: 'https://reactjs.org/',\n  style: null\n}, {\n  name: 'SASS',\n  img: _assets_img_logos_scss_png__WEBPACK_IMPORTED_MODULE_15__[\"default\"],\n  url: 'https://sass-lang.com/',\n  style: null\n}, {\n  name: 'SQL Server',\n  img: _assets_img_logos_sql_png__WEBPACK_IMPORTED_MODULE_16__[\"default\"],\n  url: 'https://www.microsoft.com/en-us/sql-server/sql-server-downloads',\n  style: null\n}, {\n  name: 'Typescript',\n  img: _assets_img_logos_ts_png__WEBPACK_IMPORTED_MODULE_17__[\"default\"],\n  url: 'https://www.typescriptlang.org/',\n  style: null\n}, {\n  name: 'Vue JS',\n  img: _assets_img_logos_vue_png__WEBPACK_IMPORTED_MODULE_18__[\"default\"],\n  url: 'https://vuejs.org/',\n  style: null\n}];\n\n//# sourceURL=webpack://proyecto3/./src/components/utilities/constants.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -141,6 +152,105 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/assets/img/logos/angular.png":
+/*!******************************************!*\
+  !*** ./src/assets/img/logos/angular.png ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/17435fd0823ba81a99b91fac436d6a89.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/angular.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/logos/aws.png":
+/*!**************************************!*\
+  !*** ./src/assets/img/logos/aws.png ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/84d24e4e1708dc95aacf8e2abe1666cd.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/aws.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/logos/css.png":
+/*!**************************************!*\
+  !*** ./src/assets/img/logos/css.png ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/6ff70445747d9d37c5781a3b7755f1d5.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/css.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/logos/django.png":
+/*!*****************************************!*\
+  !*** ./src/assets/img/logos/django.png ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/9ebe1ce61a702b2a544d10e4bea7dfec.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/django.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/logos/firebase.png":
+/*!*******************************************!*\
+  !*** ./src/assets/img/logos/firebase.png ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/a4156cb67d6d0676cffc6242dd91029b.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/firebase.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/logos/html.png":
+/*!***************************************!*\
+  !*** ./src/assets/img/logos/html.png ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/df69503917a05a968e58c0eb5cd8f809.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/html.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/logos/ionic.svg":
+/*!****************************************!*\
+  !*** ./src/assets/img/logos/ionic.svg ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/a3aed90fed6946334f10939bfd3491dc.svg\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/ionic.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/img/logos/js.png":
+/*!*************************************!*\
+  !*** ./src/assets/img/logos/js.png ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/7f8751632b42a9932c15acf0c6ded32e.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/js.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/logos/laravel.png":
+/*!******************************************!*\
+  !*** ./src/assets/img/logos/laravel.png ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/8b2939ca7ad8851c40a264f3bdcd7138.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/laravel.png?");
+
+/***/ }),
+
 /***/ "./src/assets/img/logos/logo_principal.png":
 /*!*************************************************!*\
   !*** ./src/assets/img/logos/logo_principal.png ***!
@@ -149,6 +259,116 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/1d5876e44970391a68a5c57b702cf14c.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/logo_principal.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/logos/mysql.png":
+/*!****************************************!*\
+  !*** ./src/assets/img/logos/mysql.png ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/17ec01314179e9a8ab58157f96b01812.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/mysql.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/logos/oracle.png":
+/*!*****************************************!*\
+  !*** ./src/assets/img/logos/oracle.png ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/b1042755e1f868caf95e93a6e0c4995a.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/oracle.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/logos/php.png":
+/*!**************************************!*\
+  !*** ./src/assets/img/logos/php.png ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/00baeb442607d6f50cfe8806a72f5e8b.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/php.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/logos/postgres.png":
+/*!*******************************************!*\
+  !*** ./src/assets/img/logos/postgres.png ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/346709d92d82791ad17dd65130373e07.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/postgres.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/logos/python.png":
+/*!*****************************************!*\
+  !*** ./src/assets/img/logos/python.png ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/2e65c2b73eddaaf97e066a41dd81dba2.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/python.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/logos/react.png":
+/*!****************************************!*\
+  !*** ./src/assets/img/logos/react.png ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/44319306359c7112276d383085d64d8a.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/react.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/logos/scss.png":
+/*!***************************************!*\
+  !*** ./src/assets/img/logos/scss.png ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/b1789f6448a5bae26264a7ce4297601e.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/scss.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/logos/sql.png":
+/*!**************************************!*\
+  !*** ./src/assets/img/logos/sql.png ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/aa484baeefbe583572a3d8d449b84706.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/sql.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/logos/ts.png":
+/*!*************************************!*\
+  !*** ./src/assets/img/logos/ts.png ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/29073194eeda5803e7f3b37b70311b32.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/ts.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/logos/vue.png":
+/*!**************************************!*\
+  !*** ./src/assets/img/logos/vue.png ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/b3eb5e3c484454b1de5c2c09119f9d1f.png\");\n\n//# sourceURL=webpack://proyecto3/./src/assets/img/logos/vue.png?");
 
 /***/ }),
 
@@ -171,6 +391,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://proyecto3/./node_modules/bootstrap/dist/css/bootstrap.css?");
+
+/***/ }),
+
+/***/ "./src/components/abilities/abilities.scss":
+/*!*************************************************!*\
+  !*** ./src/components/abilities/abilities.scss ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://proyecto3/./src/components/abilities/abilities.scss?");
 
 /***/ }),
 
