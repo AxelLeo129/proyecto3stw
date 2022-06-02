@@ -21,6 +21,15 @@ import cian from '../../assets/img/logos/cian.png';
 import meke from '../../assets/img/logos/meke.png';
 import tera from '../../assets/img/logos/tera.png';
 import titon from '../../assets/img/logos/titon.png';
+import agro from '../../assets/img/screenshots/agro.png';
+import bomb from '../../assets/img/screenshots/bomb.png';
+import fit from '../../assets/img/screenshots/fit.png';
+import grow from '../../assets/img/screenshots/grow.png';
+import mime from '../../assets/img/screenshots/mime.png';
+import ox from '../../assets/img/screenshots/ox.png';
+import pepe from '../../assets/img/screenshots/pepe.png';
+import pharma from '../../assets/img/screenshots/pharma.png';
+import tusi from '../../assets/img/screenshots/tusi.png';
 
 export const abilities_tech = [
     {
@@ -183,5 +192,62 @@ export const laburo = [
         duracion: 'Oct. 2018 – Dic. 2018',
         puesto: 'Prácticas Profesionales',
         lugar: 'Guatemala'
+    }
+];
+
+export const projects_done = [
+    {
+        img: pharma,
+        nombre: 'Pharmazone',
+        url: 'https://pharmazone.app/',
+        tech: 'JS, PHP, HTML, CSS, Laravel, Vue JS, Ionic y MySQL.'
+    },
+    {
+        img: mime,
+        nombre: 'Mimento',
+        url: 'https://play.google.com/store/apps/details?id=com.terabit.mimento',
+        tech: 'JS, HTML, CSS, Ionic, TS y Firebase.'
+    },
+    {
+        img: fit,
+        nombre: 'Fit4Life',
+        url: 'https://play.google.com/store/apps/details?id=com.terabit.fit4life',
+        tech: 'JS, HTML, CSS, Ionic, TS y Firebase.'
+    },
+    {
+        img: pepe,
+        nombre: 'PePePago',
+        url: 'https://appadvice.com/app/pepepago/1542083761',
+        tech: 'JS, HTML, CSS, Angular, TS y Firebase.'
+    },
+    {
+        img: grow,
+        nombre: 'Growmotor',
+        url: 'https://ciancoders.com/portfolio/growmotor-io/',
+        tech: 'JS, Python, HTML, CSS, React JS, Django Rest, MySQL.'
+    },
+    {
+        img: ox,
+        nombre: 'OX-LAND',
+        url: 'https://www.ox-land.com/login',
+        tech: 'JS, PHP, HTML, CSS, Vue JS, Laravel, MYSQL.'
+    },
+    {
+        img: tusi,
+        nombre: 'Tú sí ganas',
+        url: 'https://www.tusiganas.com/landing',
+        tech: 'JS, PHP, HTML, CSS, Vue JS, Laravel, MYSQL.'
+    },
+    {
+        img: agro,
+        nombre: 'Agromall',
+        url: 'https://test127.ciancoders.com/',
+        tech: 'JS, Python, HTML, CSS, React JS, Django Rest, MySQL.'
+    },
+    {
+        img: bomb,
+        nombre: 'Asociación de Bomberos de Guatemala',
+        url: 'https://test133.ciancoders.com/#/login',
+        tech: 'JS, Python, HTML, CSS, React JS, Django Rest, MySQL.'
     }
 ];

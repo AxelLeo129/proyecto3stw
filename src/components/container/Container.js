@@ -5,6 +5,7 @@ import About from "../about/about";
 import Abilities from "../abilities/abilities";
 import Education from "../education/education";
 import Experience from "../experience/experience";
+import Projects from "../projects/projects";
 
 const Container = () => {
   return (
@@ -18,6 +19,7 @@ const Container = () => {
           <Abilities />
           <Education />
           <Experience />
+          <Projects />
         </div>
       </div>
     </React.Fragment>
