@@ -17,6 +17,10 @@ import scss from '../../assets/img/logos/scss.png';
 import sql from '../../assets/img/logos/sql.png';
 import ts from '../../assets/img/logos/ts.png';
 import vue from '../../assets/img/logos/vue.png';
+import cian from '../../assets/img/logos/cian.png';
+import meke from '../../assets/img/logos/meke.png';
+import tera from '../../assets/img/logos/tera.png';
+import titon from '../../assets/img/logos/titon.png';
 
 export const abilities_tech = [
     {
@@ -149,4 +153,35 @@ export const education_names = [
         career: 'Ingeniería en Ciencias de Computación y TI',
         where: 'Universidad del Valle de Guatemala'
     }
-]
+];
+
+export const laburo = [
+    {
+        img: cian,
+        nombre: 'Ciancoders S.A.',
+        duracion: 'Feb. 2021 – Actual',
+        puesto: 'Desarrollador Full Stack',
+        lugar: 'Guatemala'
+    },
+    {
+        img: tera,
+        nombre: 'Terabit Leoncio',
+        duracion: 'Ago. 2020 – Ene. 2021',
+        puesto: 'Desarrollador Frontend Móvil y Web',
+        lugar: 'Guatemala'
+    },
+    {
+        img: meke,
+        nombre: 'Mercado Empresarial S.A. (Merke)',
+        duracion: 'Ago. 2019 – Abr. 2020',
+        puesto: 'Desarrollador Full Stack',
+        lugar: 'Guatemala'
+    },
+    {
+        img: titon,
+        nombre: 'TitonSoft',
+        duracion: 'Oct. 2018 – Dic. 2018',
+        puesto: 'Prácticas Profesionales',
+        lugar: 'Guatemala'
+    }
+];

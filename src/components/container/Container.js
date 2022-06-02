@@ -4,6 +4,7 @@ import Sidebar from "../sidebar/sidebar";
 import About from "../about/about";
 import Abilities from "../abilities/abilities";
 import Education from "../education/education";
+import Experience from "../experience/experience";
 
 const Container = () => {
   return (
@@ -16,6 +17,7 @@ const Container = () => {
           <About />
           <Abilities />
           <Education />
+          <Experience />
         </div>
       </div>
     </React.Fragment>

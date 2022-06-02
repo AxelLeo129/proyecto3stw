@@ -19,7 +19,7 @@ const Education = () => {
                 />
                 <h1 className="text--color--black">Educación</h1>
                 {education_names.map((e, i) => (
-                  <div className="row">
+                  <div className="row" key={i}>
                     <div className="col-6">
                       <h5 className="text-primary animate__animated animate__zoomIn">{e.duration}</h5>
                       <p className="text--color--black animate__animated animate__zoomIn">{e.where}</p>
