@@ -1,11 +1,6 @@
-.center--experience {
-    display: flex;
-    justify-content: center;
-}
-
-.center--experience--content {
-    margin-left: 10%;
-    width: 80%;
+.sidebar--footer {
+    position: absolute;
+    bottom: 0;
 }
 
 /* Escritorio grande */
@@ -16,16 +11,26 @@
 
 /* Escritorio pequeño o tablet vertical */
 @media (max-width: 991px) and (min-width: 768px) {
-    .center--experience--content {
-        margin-left: 10%;
+    .w3-sidebar {
         width: 100%;
+    }
+
+    .sidebar--footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%
     }
 }
 
 /* Movil */
 @media (max-width: 767px) {
-    .center--experience--content {
-        margin-left: 10%;
+    .w3-sidebar {
         width: 100%;
+    }
+
+    .sidebar--footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%
     }
 }

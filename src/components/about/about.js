@@ -8,34 +8,28 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 const About = (props) => {
   return (
     <React.Fragment>
-      <div>
+      <div className="w3-blue-grey">
+        <nav class="navbar w3-blue-grey ml--3 menu--button" style={{position: 'fixed', top: 0, zIndex: 1}}>
+          <button
+            style={{
+              border: "none",
+              backgroundColor: "transparent",
+              color: "white"
+            }}
+            onClick={() =>
+              props.setDisplay({ height: "100%", display: "block", zIndex: 2 })
+            }
+            className="w3-bar-item w3-large"
+          >
+            <FontAwesomeIcon size="lg" icon={faBars} /> Menú
+          </button>
+        </nav>
         <div className="w3-container w3-blue-grey">
-          <div className="row" style={{ marginLeft: "3rem" }}>
-            <div
-              className="col-12"
-              style={{ marginLeft: "20px", marginTop: "20px" }}
-            >
-              <button
-                style={{
-                  border: "none",
-                  backgroundColor: "transparent",
-                  color: "white",
-                }}
-                onClick={() =>
-                  props.setDisplay({ height: "100%", display: "block" })
-                }
-                className="w3-bar-item w3-large"
-              >
-                <FontAwesomeIcon size="lg" icon={faBars} />
-              </button>{" "}
-            </div>
-          </div>
-          <div className="row about--me mb-3">
-            <div className="col-6 left--side">
+          <div className="row about--me mb-3 mt--5">
+            <div className="col-12 col-md-6 left--side">
               <img
                 src={axel_foto}
-                width="25%"
-                className="animate__animated animate__fadeIn"
+                className="about--img animate__animated animate__bounceIn"
               />
               <div className="left--side-titles ml--1">
                 <h1 className="animate__animated animate__bounceInDown">
@@ -49,16 +43,14 @@ const About = (props) => {
                 </h4>
               </div>
             </div>
-            <div className="col-6 center--info">
-              <p className="animate__animated animate__fadeIn">
+            <div className="col-12 col-md-6 center--info">
+              <p className="animate__animated animate__bounceIn">
                 <b>Sistemas y tecnologías Web</b>
               </p>
-              <p className="animate__animated animate__fadeIn">
+              <p className="animate__animated animate__bounceIn">
                 Universidad del Valle de Guatemala
               </p>
-              <p className="animate__animated animate__fadeIn">
-                Proyecto 3
-              </p>
+              <p className="animate__animated animate__bounceIn">Proyecto 3</p>
             </div>
           </div>
         </div>

@@ -56,3 +56,31 @@
     width: 75%;
 }
 
+/* Escritorio mediano o tablet horizontal */
+@media (min-width: 1300px) {
+    .abilities--place {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 1299px) and (min-width: 992px) {
+    .abilities--place {
+        margin-left: 10%;
+    }
+}
+
+/* Escritorio pequeño o tablet vertical */
+@media (max-width: 991px) and (min-width: 768px) {
+    .grid--container {
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+}
+
+/* Movil */
+@media (max-width: 767px) {
+    .grid--container {
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+}

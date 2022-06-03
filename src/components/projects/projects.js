@@ -14,7 +14,7 @@ const Projects = () => {
       </div>
       <div className="row row--projects">
         {projects_done.map((e, i) => (
-          <div className="col-4" key={i} style={{marginBottom: '15px'}}>
+          <div className="col-12 col-md-4" key={i} style={{marginBottom: '15px'}}>
             <div className="card--1">
               <a
                 href={e.url}

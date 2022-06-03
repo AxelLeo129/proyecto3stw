@@ -17,7 +17,7 @@
     margin-left: 3%;
 }
 
-.right--side { 
+.right--side {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -33,4 +33,83 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.ml--3 {
+    margin-left: 3rem;
+}
+
+.menu--button {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.about--img {
+    width: 25%;
+}
+
+.mt--5 {
+    margin-top: 5rem !important;
+}
+
+/* Escritorio grande */
+@media (min-width: 1200px) {}
+
+/* Escritorio mediano o tablet horizontal */
+@media (max-width: 1199px) and (min-width: 992px) {}
+
+/* Escritorio pequeño o tablet vertical */
+@media (max-width: 991px) and (min-width: 768px) {
+    .ml--3 {
+        margin-left: 0rem;
+    }
+
+    .about--me {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 2px;
+    }
+
+    .menu--button {
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about--img {
+        width: 50%;
+    }
+
+    .left--side {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Movil */
+@media (max-width: 767px) {
+    .ml--3 {
+        margin-left: 0rem;
+    }
+
+    .about--me {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 2px;
+    }
+
+    .menu--button {
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about--img {
+        width: 50%;
+    }
+
+    .left--side {
+        display: flex;
+        flex-direction: column;
+    }
 }

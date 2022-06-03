@@ -3,6 +3,7 @@ import logo_principal from "../../assets/img/logos/logo_principal.png";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import './sidebar.scss';
 
 const Sidebar = (props) => {
   return (
@@ -15,22 +16,22 @@ const Sidebar = (props) => {
           &times;
         </button>
         <img src={logo_principal} style={{ width: "100%" }} />
-        <a href="#about" className="w3-bar-item w3-button">
+        <a href="#about" className="w3-bar-item w3-button" onClick={() => props.setDisplay({ height: "100%", display: "none" })}>
           Acerca de
         </a>
-        <a href="#abilities" className="w3-bar-item w3-button">
+        <a href="#abilities" className="w3-bar-item w3-button" onClick={() => props.setDisplay({ height: "100%", display: "none" })}>
           Habilidades
         </a>
-        <a href="#education" className="w3-bar-item w3-button">
+        <a href="#education" className="w3-bar-item w3-button" onClick={() => props.setDisplay({ height: "100%", display: "none" })}>
           Educación
         </a>
-        <a href="#expe" className="w3-bar-item w3-button">
+        <a href="#expe" className="w3-bar-item w3-button" onClick={() => props.setDisplay({ height: "100%", display: "none" })}>
           Experiencia Profesional
         </a>
-        <a href="#projects" className="w3-bar-item w3-button">
+        <a href="#projects" className="w3-bar-item w3-button" onClick={() => props.setDisplay({ height: "100%", display: "none" })}>
           Proyectos
         </a>
-        <div style={{ position: "absolute", bottom: "0" }}>
+        <div className="sidebar--footer">
           <hr />
           <p className="m-3">Redes sociales / Contacto</p>
           <div className="m-3">

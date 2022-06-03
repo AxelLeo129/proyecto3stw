@@ -1,3 +1,23 @@
 .text--color--black {
     color: black !important;
 }
+
+/* Escritorio grande */
+@media (min-width: 1200px) {}
+
+/* Escritorio mediano o tablet horizontal */
+@media (max-width: 1199px) and (min-width: 992px) {}
+
+/* Escritorio pequeño o tablet vertical */
+@media (max-width: 991px) and (min-width: 768px) {
+    .card--mobile {
+        margin-left: 10px;
+    }
+}
+
+/* Movil */
+@media (max-width: 767px) {
+    .card--mobile {
+        margin-left: 10px;
+    }
+}
