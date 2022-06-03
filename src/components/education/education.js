@@ -7,10 +7,10 @@ import { education_names } from "../utilities/constants";
 const Education = () => {
   return (
     <React.Fragment>
-      <div className="row w3-blue-grey">
+      <div className="row w3-blue-grey" id="education">
         <div className="col-12 abilities--place">
           <div className="row">
-            <div className="card" style={{ marginTop: "25%" }}>
+            <div className="card" style={{ marginTop: "10%" }}>
               <div className="card-body">
                 <FontAwesomeIcon
                   className="text--color--black"

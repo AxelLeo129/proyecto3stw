@@ -6,8 +6,13 @@ import { projects_done } from "../utilities/constants";
 const Projects = () => {
   return (
     <React.Fragment>
-      <h1 className="text--color--black">Proyectos destacados</h1>
-      <div className="row">
+      <div className="row mt-3" id="projects">
+        <div className="col-12" style={{ marginLeft: "15%" }}>
+          <h1>Proyectos destacados</h1>
+          <hr />
+        </div>
+      </div>
+      <div className="row row--projects">
         {projects_done.map((e, i) => (
           <div className="col-4" key={i} style={{marginBottom: '15px'}}>
             <div className="card--1">

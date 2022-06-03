@@ -18,26 +18,42 @@ const Abilities = () => {
 
   return (
     <React.Fragment>
+      <div className="row mt-3" id="abilities">
+        <div className="col-12" style={{marginLeft: '15%'}}>
+          <h1>Habilidades</h1>
+          <hr />
+        </div>
+      </div>
       <div className="row">
         <div className="col-12 abilities--place">
-          <h1>Habilidades</h1>
-          <div className="row">
-            <div className="grid--container">
-              {grid.map((e, i) => (
-                <div className="grid--item" key={i}>
-                  <div className="main--container">
-                    <div className="card--container" style={e.style}>
-                      <div className="front">
-                        <img onMouseLeave={() => flipCard1(i)} onMouseEnter={() => flipCard(i)} className="star--img" src={e.img} />
-                      </div>
-                      <div className="back">
-                        <p><a href={e.url} target="_blank" style={{textDecoration: 'none', color: 'black'}}>{e.name}</a></p>
-                      </div>
+          <div className="grid--container">
+            {grid.map((e, i) => (
+              <div className="grid--item" key={i}>
+                <div className="main--container">
+                  <div className="card--container" style={e.style}>
+                    <div className="front">
+                      <img
+                        onMouseLeave={() => flipCard1(i)}
+                        onMouseEnter={() => flipCard(i)}
+                        className="star--img"
+                        src={e.img}
+                      />
+                    </div>
+                    <div className="back">
+                      <p>
+                        <a
+                          href={e.url}
+                          target="_blank"
+                          style={{ textDecoration: "none", color: "black" }}
+                        >
+                          {e.name}
+                        </a>
+                      </p>
                     </div>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

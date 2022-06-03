@@ -11789,7 +11789,10 @@ textarea.form-control-lg {
 /*!**********************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/startApp.css ***!
   \**********************************************************************************************************************/
-
+hr {
+  color: #607d8b !important;
+  height: 5px !important;
+}
 /*!**********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/container/Container.scss ***!
   \**********************************************************************************************************************************/
@@ -11820,6 +11823,17 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: center;
+}
+
+.about--me {
+  width: 80%;
+  margin-left: 15%;
+}
+
+.center--info {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 /*!*******************************************************************************************************************************!*\
@@ -15596,6 +15610,18 @@ textarea.form-control-lg {
 .text--color--black {
   color: black !important;
 }
+/*!************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/experience/experience.scss ***!
+  \************************************************************************************************************************************/
+.center--experience {
+  display: flex;
+  justify-content: center;
+}
+
+.center--experience--content {
+  margin-left: 10%;
+  width: 80%;
+}
 /*!********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/projects/projects.scss ***!
   \********************************************************************************************************************************/
@@ -15611,6 +15637,21 @@ textarea.form-control-lg {
 
 .container--1 {
   padding: 2px 16px;
+}
+
+.row--projects {
+  width: 80%;
+  margin-left: 15%;
+}
+/*!**********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/interests/intereses.scss ***!
+  \**********************************************************************************************************************************/
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 /*!********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.css ***!
